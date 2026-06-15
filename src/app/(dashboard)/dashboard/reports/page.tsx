@@ -10,7 +10,8 @@ import { Button } from "@/components/ui/button";
 import type { LeaseAnalysisResult } from "@/lib/gemini";
 
 export const metadata: Metadata = {
-  title: "My Reports — SmartLease AI",
+  title: "My Reports | SmartLease AI",
+  description: "View all your past lease analyses",
 };
 
 function SmallScoreCircle({ score }: { score: number }) {

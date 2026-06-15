@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Allow: /$
+Disallow: /dashboard
+Disallow: /api
+Sitemap: https://smartlease-ai.vercel.app/sitemap.xml

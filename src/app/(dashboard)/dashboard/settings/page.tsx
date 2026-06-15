@@ -10,7 +10,8 @@ import { users, leaseAnalyses, rentEstimates } from "@/db/schema";
 import DashboardTopbar from "@/components/layout/DashboardTopbar";
 
 export const metadata: Metadata = {
-  title: "Settings — SmartLease AI",
+  title: "Settings | SmartLease AI",
+  description: "Manage your SmartLease AI account",
 };
 
 const FREE_LEASE_LIMIT = 10;
