@@ -26,7 +26,9 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      clerkJSUrl="https://cdn.jsdelivr.net/npm/@clerk/clerk-js@6/dist/clerk.browser.js"
+    >
       <html lang="en" className={inter.variable}>
         <body className="min-h-screen antialiased">{children}</body>
       </html>
