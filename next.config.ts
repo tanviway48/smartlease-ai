@@ -9,6 +9,14 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async rewrites() {
+    return [
+      {
+        source: "/__clerk/:path*",
+        destination: "https://cdn.clerk.io/:path*",
+      },
+    ];
+  },
   async headers() {
     return [
       {
