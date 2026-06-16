@@ -12,8 +12,8 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return [
       {
-        source: "/__clerk/:path*",
-        destination: "https://cdn.clerk.io/:path*",
+        source: "/__clerk/npm/:path*",
+        destination: "https://cdn.jsdelivr.net/npm/:path*",
       },
     ];
   },
