@@ -11,9 +11,15 @@ const nextConfig: NextConfig = {
   },
   async rewrites() {
     return [
+      // Proxy Clerk JS/UI bundles via jsDelivr (avoids cdn.clerk.io block)
       {
         source: "/__clerk/npm/:path*",
         destination: "https://cdn.jsdelivr.net/npm/:path*",
+      },
+      // Proxy Clerk API calls to the real Clerk Frontend API
+      {
+        source: "/__clerk/:path*",
+        destination: "https://clerk.smartlease-ai-phi.vercel.app/:path*",
       },
     ];
   },
